@@ -11,9 +11,27 @@ int soma (int a, int b) {
 	return resultado;
 }
 
+ int a = 10; 
+ int b = 30; 
+ int result; 
+
+ result1 = a+b;
+ result2 = a/a; 
+ result3 = (a*b)*a; 
+
+int captura (){
+	int a; 
+	printf("Digite o numero:\n");
+	scanf("%d", &a);
+	return a;
+	 
+}
+
 int main () {
-	int entrada1, entrada2, result;
-	printf("Digite os valores que quer somar:");
-	scanf(" %d %d", &entrada1,&entrada2);
-	printf("%d\n", soma(entrada1,entrada2));
+
+	int a, b;
+	a=captura ();
+	b=captura ();
+
+	printf("%d\n", soma (a,b));
 }
