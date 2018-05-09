@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <time.h>
 
-#define MAX_FAT 5
+#define MAX_FAT 50
 #define MAX_FIB 5
 
 
@@ -13,16 +13,15 @@
 
 int FatorialIterativo(int n) {
 	int ResultFat,i;
-	i=1;
-
+	ResultFat=1;
+	
 	if (n==0 || n==1){
 		ResultFat=1;
 		return ResultFat;
 	}
 
-
-	for (i; i=(n-1) ; i++){
-		ResultFat=n*(n-i);
+	for (i=1; i<=n; i++){
+		ResultFat=ResultFat*i;
 		}
 		
 	return ResultFat;
