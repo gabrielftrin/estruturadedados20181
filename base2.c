@@ -2,14 +2,14 @@
 
 int main() {
 
-	int numero;
+	int numero=0;
 
 	//Estruturas de controle
 	//Se... Então... senão
 	//Estrutura 'if': Se a condição entre parenteses for verdadeira, executa o que estiver dentro das chaves, se não, pula essa parte.
-	if (1==1) {
+	if (numero==0) {
 	//Usamos == para fazer comparações entre 2 elementos
-		numero=4;
+		numero=5;
 	}
 
 
@@ -35,15 +35,38 @@ int main() {
 			break;
 		}
 		default : {
-			printf("O valor não é 10 nem 20. \n");
+			printf("\nO valor não é 10 nem 20. \n");
 		}
 	}
+
 
 	//Incondiiconal
 	//For: de um valor inicial até um valor final executa o que está dentro das chaves (separados por ; (ponto e virgula) )
 	printf("\nImpressão do For \n\n");
-	for (int i = 1; i < numero; ++i)
+	for (int i = 0; i < numero; ++i)
 	{
-		printf("Valor: %d\n", i);
+		printf("Iteração:%d ; ", i);
+		printf("Valor:%d\n", numero);
 	}
+
+
+	//Condicional
+	//while (enquanto): Enquanto tal condição for verdadeira continue executando o que estiver dentro das chaves
+	while (numero==0){
+
+/*
+
+while (expr-cond) {
+comandos
+}
+do {
+comandos
+} while (expr-cond)
+de 1 a n repetições
+de 0 a n repetições
+
+
+*/
+	}
+
 }
