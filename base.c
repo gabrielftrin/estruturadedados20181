@@ -7,7 +7,8 @@
 //#include <cabecalho.h>
 
 // Criar a função principal 'main'
-int main () {
+int main ()
+{
 
 	// Criar uma variavel, informa o tipo, depois o nome
 	int numero;
@@ -16,15 +17,21 @@ int main () {
 	numero=10;
 
 	//Imprimir um texto na tela
-	printf("Este é um programa em C básico. \n");
+	printf("\n=====Este é um programa em C básico.=====\n\n");
 	// A expressão \n serve para o programa pular uma linha
 
 	//Imprimir o valor de uma variável, informa o tipo, depois o nome
-	printf("%d \n\n", numero);
+	//Para imprimir informe a flag (tipo da variavel) a ser impresso. Neste exemplo usamos %d. % significa que vamos informar o tipo da variavel. 'd' é a flag de representação do tipo da variavel a ser impressa que estamos informando.
+	printf("Valor da variavel 'numero': %d \n\n", numero);
 
-	char carac;
-	printf("10"); 
+	//Imprimir um texto de solicitação ao usuário na tela
+	printf("Digite um numero inteiro. \n");
 
-	
+	//Capturar um valor digitado pelo usuário
+	scanf("%d", &numero);
+
+	//Imprimir valor digitado
+	printf("\nValor digitado:\n%d\n\n", numero);
+
 
 }
