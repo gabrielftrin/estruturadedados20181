@@ -40,7 +40,7 @@ int main() {
 	}
 
 
-	//Incondiiconal
+	//Incondicional
 	//For: de um valor inicial até um valor final executa o que está dentro das chaves (separados por ; (ponto e virgula) )
 	printf("\nImpressão do For \n\n");
 	for (int i = 0; i < numero; ++i)
